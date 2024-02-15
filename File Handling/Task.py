@@ -7,13 +7,14 @@
 # The program should handle cases where the file contains non-numeric values gracefully, skipping them and continuing with the calculation.
 # Ensure to close the file properly after reading its contents.
 
+# initalizing sum to zero so we can add the value of the file
 sum= 0
 
-with open('/home/jaysi/Desktop/Learning_Python/File Handling/numbers.txt', 'r') as file:
-    number = file.readlines()
-    for i in number:
+with open('/home/jaysi/Desktop/Learning_Python/File Handling/numbers.txt', 'r') as file: # Opening the file
+    number = file.readlines() # reading file lines
+    for i in number: #created a loop to read each line
         try:
-            sum += int(i)
-        except ValueError:
+            sum += int(i) # Parsing the file values to int and adding the value to sum
+        except ValueError: # If error occurs it will skip the line and continue the further process
             continue
-    print("The Sum of the number is :", sum)
+    print("The Sum of the number is :", sum) # Printing the Final Value
