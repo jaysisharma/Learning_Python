@@ -11,12 +11,15 @@
 
 
 
+# imported module
 import random as r
 
-random_num = r.randint(1,100)
-attempt = 0
+random_num = r.randint(1,100) # Generating a random number between 1 and 100
+attempt = 0 # initializing attempt value as 0
+
+# Runs until the user doesn't give correct answer
 while True:
-    user_input = int(input("Guess the random number "))
+    user_input = int(input("Guess the random number ")) # Taking User input to compare 
     print(random_num)
     attempt +=1
     if (user_input == random_num):
