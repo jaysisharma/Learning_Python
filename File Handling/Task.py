@@ -23,4 +23,5 @@ with open('/home/jaysi/Desktop/Learning_Python/File Handling/numbers.txt', 'r') 
 
     print("The Sum of the number is :", sum) # Printing the Final Value
 
+
     
