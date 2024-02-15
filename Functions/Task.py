@@ -19,15 +19,26 @@ attempt = 0 # initializing attempt value as 0
 
 # Runs until the user doesn't give correct answer
 while True:
-    user_input = int(input("Guess the random number ")) # Taking User input to compare 
-    print(random_num)
-    attempt +=1
-    if (user_input == random_num):
-        print('Congratulations! You guessed the number!')
-        print("You had done total :", attempt ,"attempts")
-        break
-    if (user_input > random_num ):
-        print("Too high,Try again")
-    else:
-        print('Too low, Try again')
+    try:
+        user_input = int(input("Guess the random number ")) # Taking User input to compare 
+        attempt +=1
+        if(user_input < 0 ):
+            print('Value cannot be negative')
+        else:
+            if (user_input == random_num):
+                print('Congratulations! You guessed the number!')
+                print("You had done total :", attempt ,"attempts")
+                break
+            elif (user_input > random_num ):
+                print("Too high,Try again")
+            elif (user_input < random_num):
+                print('Too low, Try again')
+    except ValueError:
+        print("Value cannot be string")
+        
+        
+
+
+
+
 
