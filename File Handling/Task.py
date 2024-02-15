@@ -11,10 +11,16 @@
 sum= 0
 
 with open('/home/jaysi/Desktop/Learning_Python/File Handling/numbers.txt', 'r') as file: # Opening the file
+    
     number = file.readlines() # reading file lines
+    
     for i in number: #created a loop to read each line
         try:
             sum += int(i) # Parsing the file values to int and adding the value to sum
+
         except ValueError: # If error occurs it will skip the line and continue the further process
             continue
+
     print("The Sum of the number is :", sum) # Printing the Final Value
+
+    
