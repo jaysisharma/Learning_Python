@@ -28,7 +28,7 @@ file.close()
 # Appending on a file
 file = open('/home/jaysi/Desktop/Learning_Python/File Handling/abc.txt', 'a')
 
-file.write('\nThis is appended value')
+file.write('\nThis is appended value from program')
 file.close()
 
 
