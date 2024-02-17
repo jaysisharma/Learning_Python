@@ -47,3 +47,13 @@ Learned about
 6. Method Overriding
  
 ### Completed a OOP task about a online shopping system
+
+
+
+## Day 3
+
+### Learning about decorators 
+
+Learned about
+1. How to use decorators ?
+2. Where to use decorators ?
